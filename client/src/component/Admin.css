@@ -1,0 +1,99 @@
+.Admin-main{
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+}
+.Admin-Nav{
+    width: 100%;
+    height: 4rem;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Admin-head{
+    font-size: 35px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.Admin-display{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Admin-display table{
+    width: 80%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+.Admin-display table tr{
+    border: 1px solid black;
+}
+.Admin-display table th{
+    border: 1px solid black;
+}
+.Admin-display table td{
+    border: 1px solid black;
+}
+.task-btn{
+    width: 150px;
+    background: white;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 1.7rem;
+    border-radius: 7px;
+}
+.task-btn .fa-plus{
+    color: red;
+    margin-right: 5px;
+}
+.edit_btn,.delete_btn{
+    width: 150px;
+    margin-left: .5rem;
+    padding: 2px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid black;
+    background: rgb(7, 102, 134);
+    color: white;
+ }
+ .edit_btn{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px 3px;
+ }
+ @media(max-width:560px){
+    .Admin-Nav{
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+    }
+    .Admin-head{
+        font-size: 25px;
+    }
+    .task-btn{
+        width: 100px;
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .Admin-display table{
+        width: 95%;
+    }
+    .Admin-display table td{
+        height: 2rem;
+    }
+    .delete_btn{
+        width: 100px;
+        padding: 2px 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+ }
